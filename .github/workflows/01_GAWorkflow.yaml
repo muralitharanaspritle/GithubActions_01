@@ -10,6 +10,7 @@ jobs:
         with:
             node-version: '16'
       - run: echo "Node step up succesfull"
-      - run: node      
-          console.log("Node Installed")
+      - run: touch index.js
+      - run: echo console.log("Hellow world NodeJS")  >>  index.js
+      - run: node index.js
       
