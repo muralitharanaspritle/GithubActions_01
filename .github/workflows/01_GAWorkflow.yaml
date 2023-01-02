@@ -13,4 +13,11 @@ jobs:
       - run: touch index.js
       - run: echo "console.log('Hello world from Muralitharan')" >>index.js
       - run: node index.js
-      
+  Node-JS:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+            node-version: '16'
+      - run: node -v
