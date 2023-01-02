@@ -11,6 +11,6 @@ jobs:
             node-version: '16'
       - run: echo "Node step up succesfull"
       - run: touch index.js
-      - run: echo console.log("Hellow world NodeJS")  >>  index.js
+      - run: pwd
       - run: node index.js
       
